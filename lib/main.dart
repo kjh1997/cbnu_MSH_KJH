@@ -11,6 +11,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   var switchValue = false;
+  String test = 'hello';
 
   // This widget is the root of your application.
   @override
@@ -23,26 +24,33 @@ class _MyAppState extends State<MyApp> {
         ),
         darkTheme: ThemeData.light(),
         home: Scaffold(
-          appBar: AppBar( title: Text("appbar")),
+          appBar: AppBar(title: Text("appbar")),
           bottomNavigationBar: BottomAppBar(
-              child: Row(
-
-                children: [
-                IconButton(onPressed: (){}, icon: Icon(Icons.icecream_outlined)),
-                IconButton(onPressed: (){}, icon: Icon(Icons.menu)),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.access_alarm))
-                ],
-              ),),
+            child: Row(
+              children: [
+                IconButton(
+                    onPressed: () {}, icon: Icon(Icons.icecream_outlined)),
+                IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
+                IconButton(onPressed: () {}, icon: Icon(Icons.access_alarm))
+              ],
+            ),
+          ),
           body: Center(
-            child: Switch(
-                value: switchValue,
-                onChanged: (value) {
-                  setState(() {
-                    print(value);
-                    switchValue = value;
-                  });
+            child: ElevatedButton(child: Text('$test'),
 
-                }),
+            onPressed: () {
+              if (test == 'hello'){
+                setState(() {
+                  test = 'flutter';
+                });
+
+              } else {
+                setState(() {
+                  test= 'hello';
+                });
+              }
+
+            }),
           ),
         ));
   }
