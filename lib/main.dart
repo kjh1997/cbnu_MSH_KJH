@@ -31,18 +31,17 @@ class _MyAppState extends State<MyApp> {
                 IconButton(onPressed: (){}, icon: Icon(Icons.icecream_outlined)),
                 IconButton(onPressed: (){}, icon: Icon(Icons.menu)),
                   IconButton(onPressed: (){}, icon: Icon(Icons.access_alarm))
-
-              ],
-
-
-
+                ],
               ),),
           body: Center(
             child: Switch(
                 value: switchValue,
                 onChanged: (value) {
-                  print(value);
-                  switchValue = value;
+                  setState(() {
+                    print(value);
+                    switchValue = value;
+                  });
+
                 }),
           ),
         ));
