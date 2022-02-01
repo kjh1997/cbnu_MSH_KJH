@@ -13,7 +13,6 @@
 	<description>A simple bigdata.smartcar.redis.</description>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
-	
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,18 +32,6 @@
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
 			<version>2.8.1</version>
-		</dependency>
-		<dependency>
-		    <groupId>com.google.firebase</groupId>
-		    <artifactId>firebase-admin</artifactId>
-		    <version>6.8.1</version>
-		</dependency>
-		
-		<dependency>
-		    <groupId>com.google.auto.value</groupId>
-		    <artifactId>auto-value</artifactId>
-		    <version>1.6.5</version>
-		    <scope>provided</scope>
 		</dependency>
 
 	</dependencies>
