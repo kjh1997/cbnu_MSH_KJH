@@ -5,7 +5,8 @@
   <artifactId>bigdata.smartcar.redis</artifactId>
   <name>bigdata.smartcar.redis</name>
   <version>1.0</version>
-  <url>http://maven.apache.org</url>
+  <description>A simple bigdata.smartcar.redis.</description>
+  <url>http://www.example.com</url>
   <build>
     <plugins>
       <plugin>
@@ -25,8 +26,18 @@
       </plugin>
     </plugins>
   </build>
+  <dependencies>
+    <dependency>
+      <groupId>com.google.auto.value</groupId>
+      <artifactId>auto-value</artifactId>
+      <version>1.6.5</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
   <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 </project>
 
