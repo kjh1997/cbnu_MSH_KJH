@@ -1,0 +1,147 @@
+19-Feb-2022 16:04:26.468 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.55
+19-Feb-2022 16:04:26.476 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Nov 10 2021 08:26:45 UTC
+19-Feb-2022 16:04:26.476 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.55.0
+19-Feb-2022 16:04:26.476 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+19-Feb-2022 16:04:26.477 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+19-Feb-2022 16:04:26.477 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+19-Feb-2022 16:04:26.477 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk1.8.0_301\jre
+19-Feb-2022 16:04:26.477 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          1.8.0_301-b09
+19-Feb-2022 16:04:26.478 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+19-Feb-2022 16:04:26.478 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\server\apache-tomcat-9.0.55
+19-Feb-2022 16:04:26.478 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\server\apache-tomcat-9.0.55
+19-Feb-2022 16:04:26.480 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\server\apache-tomcat-9.0.55\conf\logging.properties
+19-Feb-2022 16:04:26.481 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Feb-2022 16:04:26.482 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+19-Feb-2022 16:04:26.484 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Feb-2022 16:04:26.486 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+19-Feb-2022 16:04:26.487 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\server\apache-tomcat-9.0.55
+19-Feb-2022 16:04:26.488 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\server\apache-tomcat-9.0.55
+19-Feb-2022 16:04:26.492 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\server\apache-tomcat-9.0.55\temp
+19-Feb-2022 16:04:26.511 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.0]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.31]을(를) 로드했습니다.
+19-Feb-2022 16:04:26.514 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+19-Feb-2022 16:04:26.516 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+19-Feb-2022 16:04:26.521 정보 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1l  24 Aug 2021]
+19-Feb-2022 16:04:26.891 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+19-Feb-2022 16:04:26.910 심각 [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[HTTP/1.1-8080]]을(를) 초기화하지 못했습니다.
+	org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1049)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:438)
+		at sun.nio.ch.Net.bind(Net.java:430)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:271)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:226)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1213)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1226)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:603)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1046)
+		... 13 more
+19-Feb-2022 16:04:26.917 정보 [main] org.apache.catalina.startup.Catalina.load [642] 밀리초 내에 서버가 초기화되었습니다.
+19-Feb-2022 16:04:26.960 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+19-Feb-2022 16:04:26.963 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.55]
+19-Feb-2022 16:04:26.987 정보 [main] org.apache.catalina.startup.HostConfig.deployWAR 웹 애플리케이션 아카이브 [C:\server\apache-tomcat-9.0.55\webapps\android_server.war]을(를) 배치합니다.
+19-Feb-2022 16:04:27.709 정보 [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+19-Feb-2022 16:04:27.988 경고 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom [SHA1PRNG] 알고리즘을 사용하여, 세션 ID를 생성하기 위한 SecureRandom 객체를 생성하는데, [252] 밀리초가 소요됐습니다.
+19-Feb-2022 16:04:28.010 정보 [main] org.apache.catalina.startup.HostConfig.deployWAR 웹 애플리케이션 아카이브 [C:\server\apache-tomcat-9.0.55\webapps\android_server.war]의 배치가 [1,023] 밀리초에 완료되었습니다.
+19-Feb-2022 16:04:28.013 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\docs]을(를) 배치합니다.
+19-Feb-2022 16:04:28.039 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\docs]에 대한 배치가 [26] 밀리초에 완료되었습니다.
+19-Feb-2022 16:04:28.047 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\examples]을(를) 배치합니다.
+19-Feb-2022 16:04:28.575 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\examples]에 대한 배치가 [528] 밀리초에 완료되었습니다.
+19-Feb-2022 16:04:28.579 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\host-manager]을(를) 배치합니다.
+19-Feb-2022 16:04:28.614 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\host-manager]에 대한 배치가 [36] 밀리초에 완료되었습니다.
+19-Feb-2022 16:04:28.617 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\manager]을(를) 배치합니다.
+19-Feb-2022 16:04:28.645 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\manager]에 대한 배치가 [29] 밀리초에 완료되었습니다.
+19-Feb-2022 16:04:28.649 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\ROOT]을(를) 배치합니다.
+19-Feb-2022 16:04:28.672 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\ROOT]에 대한 배치가 [24] 밀리초에 완료되었습니다.
+19-Feb-2022 16:04:28.681 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [1762] 밀리초 내에 시작되었습니다.
+19-Feb-2022 16:04:28.688 심각 [main] org.apache.catalina.core.StandardServer.await 주소 [localhost]와(과) 포트 [8005]에, 서버 셧다운 소켓을 생성하지 못했습니다. (base 포트 [8005], offset [0])
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:102)
+		at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:513)
+		at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:180)
+		at java.net.ServerSocket.bind(ServerSocket.java:375)
+		at java.net.ServerSocket.<init>(ServerSocket.java:237)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+19-Feb-2022 16:04:28.692 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+19-Feb-2022 16:04:28.694 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+19-Feb-2022 16:04:28.715 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+19-Feb-2022 16:04:28.717 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+19-Feb-2022 16:05:09.105 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.55
+19-Feb-2022 16:05:09.110 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Nov 10 2021 08:26:45 UTC
+19-Feb-2022 16:05:09.110 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.55.0
+19-Feb-2022 16:05:09.111 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+19-Feb-2022 16:05:09.111 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+19-Feb-2022 16:05:09.111 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+19-Feb-2022 16:05:09.111 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk1.8.0_301\jre
+19-Feb-2022 16:05:09.112 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          1.8.0_301-b09
+19-Feb-2022 16:05:09.112 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+19-Feb-2022 16:05:09.112 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\server\apache-tomcat-9.0.55
+19-Feb-2022 16:05:09.112 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\server\apache-tomcat-9.0.55
+19-Feb-2022 16:05:09.113 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\server\apache-tomcat-9.0.55\conf\logging.properties
+19-Feb-2022 16:05:09.115 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Feb-2022 16:05:09.116 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+19-Feb-2022 16:05:09.117 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Feb-2022 16:05:09.119 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+19-Feb-2022 16:05:09.120 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\server\apache-tomcat-9.0.55
+19-Feb-2022 16:05:09.122 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\server\apache-tomcat-9.0.55
+19-Feb-2022 16:05:09.123 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\server\apache-tomcat-9.0.55\temp
+19-Feb-2022 16:05:09.127 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.0]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.31]을(를) 로드했습니다.
+19-Feb-2022 16:05:09.129 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+19-Feb-2022 16:05:09.130 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+19-Feb-2022 16:05:09.135 정보 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1l  24 Aug 2021]
+19-Feb-2022 16:05:09.387 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+19-Feb-2022 16:05:09.417 정보 [main] org.apache.catalina.startup.Catalina.load [468] 밀리초 내에 서버가 초기화되었습니다.
+19-Feb-2022 16:05:09.447 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+19-Feb-2022 16:05:09.450 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.55]
+19-Feb-2022 16:05:09.467 정보 [main] org.apache.catalina.startup.HostConfig.deployWAR 웹 애플리케이션 아카이브 [C:\server\apache-tomcat-9.0.55\webapps\android_server.war]을(를) 배치합니다.
+19-Feb-2022 16:05:09.954 정보 [main] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+19-Feb-2022 16:05:10.212 경고 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom [SHA1PRNG] 알고리즘을 사용하여, 세션 ID를 생성하기 위한 SecureRandom 객체를 생성하는데, [235] 밀리초가 소요됐습니다.
+19-Feb-2022 16:05:10.231 정보 [main] org.apache.catalina.startup.HostConfig.deployWAR 웹 애플리케이션 아카이브 [C:\server\apache-tomcat-9.0.55\webapps\android_server.war]의 배치가 [764] 밀리초에 완료되었습니다.
+19-Feb-2022 16:05:10.234 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\docs]을(를) 배치합니다.
+19-Feb-2022 16:05:10.257 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\docs]에 대한 배치가 [23] 밀리초에 완료되었습니다.
+19-Feb-2022 16:05:10.261 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\examples]을(를) 배치합니다.
+19-Feb-2022 16:05:10.577 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\examples]에 대한 배치가 [316] 밀리초에 완료되었습니다.
+19-Feb-2022 16:05:10.581 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\host-manager]을(를) 배치합니다.
+19-Feb-2022 16:05:10.611 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\host-manager]에 대한 배치가 [29] 밀리초에 완료되었습니다.
+19-Feb-2022 16:05:10.613 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\manager]을(를) 배치합니다.
+19-Feb-2022 16:05:10.638 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\manager]에 대한 배치가 [25] 밀리초에 완료되었습니다.
+19-Feb-2022 16:05:10.641 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\ROOT]을(를) 배치합니다.
+19-Feb-2022 16:05:10.665 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\server\apache-tomcat-9.0.55\webapps\ROOT]에 대한 배치가 [24] 밀리초에 완료되었습니다.
+19-Feb-2022 16:05:10.673 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+19-Feb-2022 16:05:10.691 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [1272] 밀리초 내에 시작되었습니다.
+19-Feb-2022 16:20:31.214 정보 [Thread-3] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+19-Feb-2022 16:20:31.531 정보 [Thread-3] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+19-Feb-2022 16:20:31.554 경고 [Thread-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc 웹 애플리케이션 [android_server]이(가) JDBC 드라이버 [com.mysql.cj.jdbc.Driver]을(를) 등록했지만, 웹 애플리케이션이 중지될 때, 해당 JDBC 드라이버의 등록을 제거하지 못했습니다. 메모리 누수를 방지하기 위하여, 등록을 강제로 제거했습니다.
+19-Feb-2022 16:20:31.557 경고 [Thread-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads 웹 애플리케이션 [android_server]이(가) [mysql-cj-abandoned-connection-cleanup](이)라는 이름의 쓰레드를 시작시킨 것으로 보이지만, 해당 쓰레드를 중지시키지 못했습니다. 이는 메모리 누수를 유발할 가능성이 큽니다. 해당 쓰레드의 스택 트레이스:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+19-Feb-2022 16:20:31.563 정보 [Thread-3] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+19-Feb-2022 16:20:31.573 정보 [Thread-3] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
