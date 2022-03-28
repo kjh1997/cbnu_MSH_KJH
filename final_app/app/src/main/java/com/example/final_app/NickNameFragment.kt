@@ -19,12 +19,9 @@ class NickNameFragment : Fragment() {
 
     // nickfragment 바인딩
     lateinit var nickNameFragmentBinding : FragmentNickNameBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -61,10 +58,8 @@ class NickNameFragment : Fragment() {
                 builder1.add("user_pw",act.userPw)
                 builder1.add("user_nick_name",act.userNickName)
                 val formBody = builder1.build()
-
                 val request = Request.Builder().url(site).post(formBody).build()
                 val response = client.newCall(request).execute()
-
                 if (response.isSuccessful == true){
                     activity?.runOnUiThread{
                         val dialogBuilder = AlertDialog.Builder(requireContext())
@@ -87,11 +82,7 @@ class NickNameFragment : Fragment() {
                     }
                 }
             }
-
         }
         return nickNameFragmentBinding.root
-
     }
-
-
 }
