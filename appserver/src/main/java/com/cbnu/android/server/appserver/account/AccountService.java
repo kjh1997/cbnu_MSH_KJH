@@ -53,7 +53,6 @@ public class AccountService {
     }
 
     public int autoLogin(String login_user_idx) {
-
         return userRepositroy.findById(Integer.parseInt(login_user_idx)).getUserAutoLogin();
     }
 }

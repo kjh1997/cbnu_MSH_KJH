@@ -23,20 +23,20 @@ public class ContentService {
 
     public List<Content> getContentList(String page_num, String content_board_idx) {
         int startIndex = (Integer.parseInt(page_num) - 1) * 10;
+        System.out.println(startIndex);
 
         if (Integer.parseInt(content_board_idx) == 0) {
-            String sql = "select c from Content c inner join c.writeridx w where c.id >= :a and" +
-                    " c.id < :b order by c.id desc";
-            TypedQuery<Content> content = em.createQuery(sql, Content.class).setParameter("a",Integer.parseInt(page_num)).setParameter("b", Integer.parseInt(page_num) + 10);
+            String sql = "select c from Content c inner join c.writeridx w order by c.id desc";
+            TypedQuery<Content> content = em.createQuery(sql, Content.class).setFirstResult(startIndex).setMaxResults(10);
+
             List<Content> contentList = content.getResultList();
             System.out.println(contentList.size());
             return contentList;
         } else {
-            String sql = "select c from Content c inner join c.writeridx w where c.id >= :a and c.id < :b and c.boardidx = :boardidx order by c.id desc ";
-            TypedQuery<Content> content = em.createQuery(sql, Content.class)
-                    .setParameter("a",Integer.parseInt(page_num))
-                    .setParameter("b", Integer.parseInt(page_num) + 10)
-                    .setParameter("boardidx",Integer.parseInt(content_board_idx));
+            String sql = "select c from Content c inner join c.writeridx w where c.boardidx = :boardidx order by c.id desc";
+            TypedQuery<Content> content = em.createQuery(sql, Content.class).setParameter("boardidx",Integer.parseInt(content_board_idx))
+                    .setFirstResult(startIndex).setMaxResults(10);
+
             List<Content> contentList = content.getResultList();
 
             return contentList;

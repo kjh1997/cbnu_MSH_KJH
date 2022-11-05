@@ -21,6 +21,7 @@ public class AccountController {
     }
     @PostMapping("CommunityServer/join_user.jsp")
     public String joinUser(HttpServletRequest request, HttpServletResponse response) {
+
         if (accountService.findByAccount(request.getParameter("user_id")) == true || accountService.findByNickName(request.getParameter("user_nick_name")) == true) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return "fail";

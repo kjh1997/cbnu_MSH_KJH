@@ -23,9 +23,9 @@
     String str2 = multi.getParameter("content_board_idx");
     int contentBoardIdx = Integer.parseInt(str2);
     
-    String dbUrl = "jdbc:mysql://localhost:3306/community_db";
+    String dbUrl = "jdbc:mysql://localhost:3306/android";
     String dbId = "root";
-    String dbPw = "2323";
+    String dbPw = "whdgns1002@";
     Class.forName("com.mysql.cj.jdbc.Driver");
     Connection conn = DriverManager.getConnection(dbUrl, dbId, dbPw);
     

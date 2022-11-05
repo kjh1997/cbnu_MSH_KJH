@@ -15,9 +15,9 @@
     //System.out.println(userNickName);
     
     //데이터 베이스 접속
-    String dbUrl = "jdbc:mysql://localhost:3306/community_db";
+    String dbUrl = "jdbc:mysql://localhost:3306/android";
     String dbId = "root";
-    String dbPw = "2323";
+    String dbPw = "whdgns1002@";
     
     Class.forName("com.mysql.cj.jdbc.Driver");
     
